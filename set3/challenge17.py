@@ -2,6 +2,10 @@ from Crypto.Cipher import AES
 from cbc_assets import cbc_encrypt, cbc_decrypt, pad_pcks7, validate_pcks7, collapse_byteblocks, copy_bytes, concat_bytes
 from random import randint
 
+'''
+CBC PADDING ORACLE
+'''
+
 def encrypt():
 	size = 16
 	iv = b'0' * size
